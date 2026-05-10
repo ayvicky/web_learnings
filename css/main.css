@@ -1,0 +1,19 @@
+p {
+    background-color: lightgray; 
+    color: white; 
+    font-size: 30px; 
+    padding: 30px;
+     border: 20px solid red;
+}
+.p1 {
+    color: blue;
+    font-weight: bold;
+}
+#sp1 {
+    color: red;
+    font-weight: 600;
+}
+
+.navbar-item {
+    margin: 20px;
+}
