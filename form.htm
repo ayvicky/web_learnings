@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="icon" type="image/x-icon" href="./images/chat.png">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <style>
+        form {
+            margin-top: 25px;
+        }
+        div {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="./home.htm" class="navbar-item">Home</a>
+    <a href="./aboutus.htm" class="navbar-item">About us</a>
+    <a href="./contact.htm" class="navbar-item">contact us</a>
+    <a href="./home2.htm" class="navbar-item"> home2</a>
+    <a href="./form.htm">Forms</a>
+
+    <form action="" method="">
+        <div>
+            <input type="checkbox">
+            <label for="">Accept Terms & Conditions</label>
+        </div>
+
+        <div>
+            <h2>Select Color</h2>
+            <div>
+                <input type="checkbox" name="color-option-1" value="green">
+                <label for="">Green</label>
+            </div>
+            <div>
+                <input type="checkbox" name="color-option-2" value="red">
+                <label for="">Red</label>
+            </div>
+            <div>
+                <input type="checkbox" name="color-option-3" value="blue">
+                <label for="">Blue</label>
+            </div>
+        </div>
+
+        <div>
+            <h2>Select Color</h2>
+            <div>
+                <input type="radio" name="color-selection" value="green">
+                <label for="">Green</label>
+            </div>
+            <div>
+                <input type="radio" name="color-selection" value="red">
+                <label for="">Red</label>
+            </div>
+            <div>
+                <input type="radio" name="color-selection" value="blue">
+                <label for="">Blue</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="">Select Country</label>
+            <select name="country" id="country">
+                <option value="pak">Pakistan</option>
+                <option value="ind">India</option>
+                <option value="uae">UAE</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="">Phone no</label>
+            <input type="tel" name="phone-no" id="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{5}" placeholder="xxx-xx-xxxxx">
+        </div>
+        <p>
+           <span> Lorem ipsum dolor sit amet </span>
+        </p>
+        <div>
+            <label for="">Age</label>
+            <input type="number" min="18" max="45">
+        </div>
+        <div>
+            <label for="">Age Range</label>
+            <input type="range" name="age-range" min="18" max="45">
+        </div>
+
+        <div>
+            <label for="">age-range</label>
+            <input type="range" name="age-range" min="20" max="60">
+        </div>
+        <div>
+            <label for="">Choose Color</label>
+            <input type="color" value="#fff" name="color">
+        </div>
+
+        <div>
+            <label for="">Select Date</label>
+            <input type="date" name="date">
+        </div>
+        <div>
+            <label for="">Select Time</label>
+            <input type="time" name="time">
+        </div>
+
+        
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+</html>
