@@ -1,6 +1,7 @@
 
+
 variables:
-    // string, number, float, boolean
+    // Datatypes: string, number, float, boolean
     // define variable
     float a, b c ;
     // initalize variable
@@ -45,3 +46,61 @@ variables:
 
     a = 4;
     print(++a)
+
+    tableof = 5;
+
+    studentdata = [
+        {id: "", name: "", class: "", marks: "", obtainedMarks: ""}
+        {id: "", name: "", class: "", marks: "", obtainedMarks: ""}
+        {id: "", name: "", class: "", marks: "", obtainedMarks: ""}
+        {id: "", name: "", class: "", marks: "", obtainedMarks: ""}
+        {id: "", name: "", class: "", marks: "", obtainedMarks: ""}
+    ]
+
+    tableof * 1 = 5
+    tableof * 2 = 10
+    tableof * 3 = 15
+    tableof * 4 = 20
+    tableof * 5 = 25
+    tableof * 6 = 30
+    tableof * 7 = 35
+    tableof * 8 = 40
+    tableof * 9 = 45
+    tableof * 10 = 50
+
+    // Loops - for repetative tasks
+    for( i= 4; i <= 10; i++) {
+        printf(tableof * i =  tableof * i)
+    }
+
+    // 5  * 1 = 5
+    // 5 * 2 = 10
+
+    while(true) {
+
+    }
+
+    i = 1
+    while(11 <= 10) {
+        printf(tableof * i =  tableof * i)
+        i++
+    }
+
+    i = 11
+    do{
+        printf(tableof * i =  tableof * i)
+
+    }while(11 <= 10)
+
+    obtained_marks = 85;
+    total_marks = 100;
+    percentage = 85 / 100 * 100 ;
+    if(percentage <= 33) {
+        print("E")
+    } else if (percentage <= 40) {
+        print("D")
+    } else if () {
+         
+    } else {
+
+    }
