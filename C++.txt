@@ -1,0 +1,47 @@
+
+variables:
+    // string, number, float, boolean
+    // define variable
+    float a, b c ;
+    // initalize variable
+    name = "ALI"
+    age = 15
+    price = 15.50
+    isActive = false
+
+    float discount = 12.05
+
+    // arthematic operators
+    a = 12
+    b = 15
+    addition +    ( 2 + 3)  ( a + b )
+    subtraction -  ( 3 -2 )  ( b - a)
+    multiplication * ( 3 * 2) ( b * a)
+    division /   ( 6 / 2)  ( b / a ) -- 6 /2 = 3
+    moduls  %    ( 7 / 2 ) ( 6 / a ) -- 6 % 2 = 1
+
+    comparision operators:
+    greater than >  ---  3 > 2  ? true
+    less than <   ---  3 < 2 ? false
+    greater than equal to >=   ----  3 >= 3 ? true
+    less than equal to <=   --- 3 >= 5 ? false
+    double equal to ==    --- 5.1 == 5.1 ? true
+
+    increment & decrement 
+    a = 3;
+    a = a + 1
+    a = a - 1
+
+    a += 1;
+    a -= 1;
+
+    // post-increment
+    a++;
+    a--;
+
+    // pre-increment
+    ++a;
+    --a;
+
+    a = 4;
+    print(++a)
