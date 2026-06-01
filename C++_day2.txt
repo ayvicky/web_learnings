@@ -1,0 +1,63 @@
+
+website link: https://www.programiz.com/cpp-programming/online-compiler/
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int number = 10;
+    string name = "ABC";
+    
+    cout << "Age: " << number;
+    cout << "\n" << "Name: " << name;
+    cout << endl;
+    
+    int age;
+    string userName;
+    cout << "Enter your name: ";
+    cin >> userName;
+    
+    cout << "Enter your age: ";
+    cin >> age;
+
+    cout << "--- User Information ----";
+    cout << "\n" << "Name : " << userName;
+    cout << "\n" << "Age : " << age;
+    
+    if(age >= 30)
+        cout << "\n Senior";
+    else if(age >= 18)
+        cout << "\n Adult";
+    else
+        cout << "\n Young";
+        
+    int marks;
+    cout << "Enter your marks : " << endl;
+    cin >> marks;
+    
+    if(marks >= 90)
+        cout << "Grade A" << endl;
+    else if (marks >= 80)
+        cout << "Grade B" << endl;
+    else if (marks >= 70)
+        cout << "Grade C" << endl;
+    else if (marks >= 60)
+        cout << "Grade D" << endl;
+    else
+        cout << "Fail" << endl;
+        
+    switch(marks)
+    case condition:
+        .....
+        break;
+    case condition:
+        .....
+        break;
+    default:
+        .....
+        break;
+    
+    return 0;
+}
