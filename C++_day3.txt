@@ -1,0 +1,78 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // P1
+    // int age;
+    // cout << "Start small. Ship something. \n";
+    // cout << "Enter your age";
+    // cin >> age;
+    
+    // cout << age;
+    
+    // P 2
+    // int num1, num2;
+    // cout << "Enter number one value: " << endl;
+    // cin >> num1;
+    
+    // cout << "Enter number two value: " << endl;
+    // cin >> num2;
+    
+    // // int sum = num1 + num2;
+    // int min;
+    // if(num1 < num2)
+    //     min = num1;
+    // else if(num2 < num1) 
+    //     min = num2;
+    // else
+    //     cout << "Both numbers are equal.";
+
+    // cout << "Min numer is : " << min;    
+    // cout << "Sum of " << num1 << " & " << num2 << ": " << sum;
+    
+    
+    int tableNum;
+    cout << "Enter value for table :" << endl;
+    cin >> tableNum;
+    
+    int counter = 1;
+    while(counter <= 10) {
+        cout << tableNum << " x " << counter << " = " << tableNum * counter << endl;
+        counter++;
+    }
+    
+    // whie(condition) {
+        
+    // }
+    cout << "DO-While Loop: " << endl;
+    int tableNum2;
+    cout << "Enter value for table :" << endl;
+    cin >> tableNum2;
+    int i = 1;
+    do {
+        cout << tableNum2 << " x " << i << " = " << tableNum2 * i << endl;
+        i++;
+    } while(i <= 10);
+    
+    cout << "For loop : " << endl;
+    int tableNum3;
+    cout << "Enter value for table :" << endl;
+    cin >> tableNum3;
+    for(int x = 1; x <= 10; x++) {
+        // if( x == 2 || x == 4 || x == 6)
+        //     continue;
+        //     break;
+        cout << tableNum3 << " x " << x << " = " << tableNum3 * x << endl;
+    }
+    
+    // cout << tableNum << " x " << 1 << " = " << tableNum * 1 << endl;
+    // cout << tableNum << " x " << 2 << " = " << tableNum * 2 << endl;
+    // cout << tableNum << " x " << 3 << " = " << tableNum * 3 << endl;
+    // cout << tableNum << " x " << 4 << " = " << tableNum * 4 << endl;
+    // cout << tableNum << " x " << 5 << " = " << tableNum * 5 << endl;
+    // cout << tableNum << " x " << 6 << " = " << tableNum * 6 << endl;
+    
+    return 0;
+}
