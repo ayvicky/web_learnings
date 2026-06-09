@@ -1,0 +1,98 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+namespace printer {
+void message(string msg = "Welcome !") {
+    cout << "namespace print";
+    cout << endl;
+    // logic 
+    cout<< msg <<endl;
+    cout <<endl;
+}
+}
+
+namespace calculator {
+    // void add() {
+    int add() {
+        int sum, firstNumber, secondNumber;
+        cout << "Enter first number: ";
+        cin >> firstNumber;
+        cout << "Enter second number: ";
+        cin >> secondNumber;
+        
+        sum = firstNumber + secondNumber;
+        return sum;
+        // cout << "Sum of first number & second number is : " << sum << endl;
+        
+    }
+    
+    void sub() {
+        
+    }
+}
+
+void info(string msg = "Welcome !") {
+    // logic 
+    cout<< msg <<endl;
+    cout <<endl;
+}
+void warning(string msg = "Welcome !") {
+    // logic 
+    cout<< msg <<endl;
+    cout <<endl;
+}
+void error(string msg = "Welcome !") {
+    // logic 
+    cout<< msg <<endl;
+    cout <<endl;
+}
+
+void message(string msg) {
+    cout << "global message: ";
+    cout << endl;
+    cout << msg;
+    cout << endl;
+}
+
+int main() {
+    // int total = calculator::add();
+    cout << "total is: " << calculator::add();
+    
+    return 0;
+    printer::message();
+    int age = 20;
+    int previousAge = age;
+    // Write C++ code here
+    cout << "Start small. Ship something." << endl;
+    cout << age;
+    cout << endl;
+    cout << previousAge;
+    message("Printing Age:");
+    age = 30;
+    
+    cout << endl;
+    cout << age;
+    cout << endl;
+    cout << previousAge;
+    
+    cout << endl;
+    int num1, num2, sum;
+    
+    cout << "Enter number 1: ";
+    cin >> num1;
+    
+    cout << "Enter number 2: ";
+    cin >> num2;
+    
+    sum = num1 + num2;
+    
+    cout << "Sum is: " << sum;
+    
+    
+
+    return 0;
+}
+
+// [ x, x, x , x, x, x, x, 20  ]
