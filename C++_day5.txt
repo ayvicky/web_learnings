@@ -1,0 +1,65 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+namespace calculator {
+    int add(int firstNumber, int secondNumber) {
+        return firstNumber + secondNumber;
+    }
+    
+    int sub(int firstNumber, int secondNumber) {
+        return firstNumber - secondNumber;
+    }
+}
+
+int takeInput(string message) {
+        int input;
+        cout << message <<endl;
+        cin >> input;
+        return input;
+}
+
+void message(string msg) {
+    cout << "global message: ";
+    cout << endl;
+    cout << msg;
+    cout << endl;
+}
+
+int main() {
+    int option, input1, input2;
+    cout << "===== Welcome in Calculator  =====" <<endl;
+    cout << "Choose option:" <<endl;
+    cout << "1. Add Operation" << endl;
+    cout << "2. Subtract  Operation" << endl;
+    cout << "3. Multiply operation" << endl;
+    cout << "4. Divide Operation" << endl;
+    
+    cin >> option;
+    
+    if(option == 1) {
+        cout << "Selected Add Operation" <<endl;
+        // input1 = takeInput("Enter first numbner.");
+        // input2 = takeInput("Enter seconds number");
+        
+        cout << calculator::add(takeInput("Enter first numbner."), takeInput("Enter seconds number"));
+        
+    } else if (option == 2) {
+        cout << "Selected Subtract Operation" <<endl;
+        cout << calculator::sub(takeInput("Enter first number"), takeInput("Enter seconds number"));
+        
+    } else if (option == 3) {
+        cout << "Selected Multiply Operation" <<endl;
+        
+    } else if (option == 4) {
+        cout << "Selected Divide Operation" <<endl;
+        
+    } else {
+        cout << "Wrong option selected." <<endl;
+    }
+    
+    
+    return 0;
+
+}
