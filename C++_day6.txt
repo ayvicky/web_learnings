@@ -1,0 +1,116 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+using namespace std;
+
+class Car {
+    private:
+        string color;
+
+    public:
+        string brand;
+        int speed;
+        string model;
+        
+        Car(string c) {
+            cout << "consturctor called" << endl;
+            brand = "Mehran";
+            speed = 120;
+            model = "2000";
+            
+            color = c;
+        }
+    
+        void setColor(string c) {
+            color = c;
+        }
+        
+        void showDetails() {
+            cout << "===== Car Details =====" << endl;
+            cout << "Brand : " << brand << endl;
+            cout << "Top Speed : " << speed << endl;
+            cout << "Model : " << model << endl;
+            cout << "Color : " << color << endl;
+        }
+};
+
+
+namespace calculator {
+    int add(int firstNumber, int secondNumber) {
+        return firstNumber + secondNumber;
+    }
+    
+    int sub(int firstNumber, int secondNumber) {
+        return firstNumber - secondNumber;
+    }
+}
+
+int takeInput(string message) {
+        int input;
+        cout << message <<endl;
+        cin >> input;
+        return input;
+}
+
+void message(string msg) {
+    cout << "global message: ";
+    cout << endl;
+    cout << msg;
+    cout << endl;
+}
+
+int main() {
+    Car car1("orange"), car3("blue");
+    car1.brand = "Toyota";
+    car1.speed = 180;
+    car1.model = "1980";
+    car1.setColor("Red");
+    
+    car1.showDetails();
+    
+    Car car2("yellow");
+    car2.brand = "Suzuki";
+    car2.speed = 120;
+    car2.model = "1987";
+    
+    
+    car2.showDetails();
+    car3.showDetails();
+    
+    
+    return 0;
+    int option, input1, input2;
+    cout << "===== Welcome in Calculator  =====" <<endl;
+    cout << "Choose option:" <<endl;
+    cout << "1. Add Operation" << endl;
+    cout << "2. Subtract  Operation" << endl;
+    cout << "3. Multiply operation" << endl;
+    cout << "4. Divide Operation" << endl;
+    
+    cin >> option;
+    
+    if(option == 1) {
+        cout << "Selected Add Operation" <<endl;
+        // input1 = takeInput("Enter first numbner.");
+        // input2 = takeInput("Enter seconds number");
+        
+        cout << calculator::add(takeInput("Enter first numbner."), takeInput("Enter seconds number"));
+        
+    } else if (option == 2) {
+        cout << "Selected Subtract Operation" <<endl;
+        cout << calculator::sub(takeInput("Enter first number"), takeInput("Enter seconds number"));
+        
+    } else if (option == 3) {
+        cout << "Selected Multiply Operation" <<endl;
+        
+    } else if (option == 4) {
+        cout << "Selected Divide Operation" <<endl;
+        
+    } else {
+        cout << "Wrong option selected." <<endl;
+    }
+    
+    
+    return 0;
+
+}
