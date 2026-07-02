@@ -1,0 +1,53 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int option;
+    double num1, num2;
+    
+    do{
+        cout << "\n Choose option" << endl;
+        cout <<"1. Add" << endl;
+        cout <<"2. Sub" <<endl;
+        cout <<"3. Muilt" <<endl;
+        cout <<"4. Divid" <<endl;
+        cout <<"0. Exit/Close Calculator" <<endl;
+        cout <<"Choose option" <<endl;
+        cin >> option;
+        
+        cout<< option <<endl;
+        
+        if(option >= 1 && option <=4) {
+            cout << "enter 1st number" << endl;
+            cin >> num1;
+            cout << "enter 2nd number" << endl;
+            cin >> num2;
+        }
+        
+        switch(option) {
+            case 1:
+                cout << "Result : " << num1 + num2 <<endl;
+                break;
+            case 2:
+                cout << "Result : " << num1 - num2 <<endl;
+                break;
+            case 3:
+                cout << "Result : " << num1 * num2 <<endl;
+                break;
+            case 4:
+                cout << "Result : " << num1 / num2 <<endl;
+                break;
+            case 0:
+                cout <<"Thank you! Calculator Closed/Exit" << endl;
+                break;
+            default:
+                cout << "Invalid option" <<endl;
+        }
+        
+    } while (option != 0);
+    
+
+    return 0;
+}
